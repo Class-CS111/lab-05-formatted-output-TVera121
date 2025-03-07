@@ -1,6 +1,6 @@
-// COLLABORATORS: <tutors, instructor, or anyone else who helped you>
+// COLLABORATORS: <Mr. Tragamila and Ms. Walke class videos>
 
-// DESCRIPTION: <a sentence about what the purpose of this program is>
+// DESCRIPTION: <Program to compute the coin equivalent of any given dollar amount, with quarters being maximized>
 
 public class Main
 {
@@ -22,33 +22,33 @@ public class Main
 
     quartersQuantityOne = (remainder/penniesInQuarter);
     remainder %= penniesInQuarter;
-    dimesQuantityOne = (remainder/penniesInDime);
+    dimesQuantityOne = (remainder/penniesInDime); //Max Dimes is 2
     remainder %= penniesInDime;
-    nickelsQuantityOne = (remainder/penniesInNickel);
+    nickelsQuantityOne = (remainder/penniesInNickel); //Max Nickels is 1
     remainder %= penniesInNickel;
-    penniesQuantityOne = remainder/penny;
+    penniesQuantityOne = remainder/penny; //Max Pennies is 4
 
     remainder = (int)(quantityTwo*100); //Calclulation to convert quantityOne into amount of pennies
 
     quartersQuantityTwo = (remainder/penniesInQuarter);
     remainder %= penniesInQuarter;
-    dimesQuantityTwo = (remainder/penniesInDime);
+    dimesQuantityTwo = (remainder/penniesInDime); //Max Dimes is 2
     remainder %= penniesInDime;
-    nickelsQuantityTwo = (remainder/penniesInNickel);
+    nickelsQuantityTwo = (remainder/penniesInNickel); //Max Nickels is 1
     remainder %= penniesInNickel;
-    penniesQuantityTwo = remainder/penny;
+    penniesQuantityTwo = remainder/penny; //Max Pennies is 4
 
     //OUTPUT SECTION
 
-    System.out.println(); //Clean Output
+    //System.out.println(); //Clean Output
 
-    System.out.printf("$%3.2f can be converted to %d quaters, %d dimes, %d nickels, and %d pennies.%n", 
+    System.out.printf("$%3.2f can be converted to %2d quaters, %2d dimes, %2d nickels, and %2d pennies.%n", 
     quantityOne, quartersQuantityOne, dimesQuantityOne, nickelsQuantityOne, penniesQuantityOne);
 
-    System.out.printf("$%3.2f can be converted to %d quaters, %d dimes, %d nickels, and %d pennies.%n", 
+    System.out.printf("$%3.2f can be converted to %2d quaters, %2d dimes, %2d nickels, and %2d pennies.%n", 
     quantityTwo, quartersQuantityTwo, dimesQuantityTwo, nickelsQuantityTwo, penniesQuantityTwo);
 
-    System.out.println(); //Clean Output
+    //System.out.println(); //Clean Output
   }
 
 }
